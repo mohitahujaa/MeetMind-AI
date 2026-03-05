@@ -1,0 +1,62 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-data/
+*.log
+
+# Extension builds
+extension/dist/
+extension/build/
+
+# Backend
+backend/dist/
+
+# Database
+pgdata/
+postgres-data/
+
+# n8n
+n8n-data/
+
+# Test files and scripts
+test-n8n-webhooks.ps1
+test-n8n-webhooks.md
+backend/check-sambanova-models.js
+backend/check-tool-calls.js
+backend/list-models.js
+backend/test-ollama.ts
+
+# Temporary documentation
+N8N_WORKFLOW_FIX.md
+PHASE1C_TOOL_BRIDGE.md
+PHASE1E_COMPLETE.md
+PHASE1E_EXTENSION.md
+TESTING_E2E.md
+TESTING_PHASE1B.md

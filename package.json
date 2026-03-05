@@ -1,0 +1,30 @@
+{
+  "name": "meetmind",
+  "version": "0.1.0",
+  "description": "MeetMind - AI Workspace Execution Agent",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "extension",
+    "shared"
+  ],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=backend",
+    "dev:extension": "npm run dev --workspace=extension",
+    "build:backend": "npm run build --workspace=backend",
+    "build:extension": "npm run build --workspace=extension",
+    "build:all": "npm run build:backend && npm run build:extension",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "db:migrate": "npm run migrate --workspace=backend"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.0"
+  }
+}
